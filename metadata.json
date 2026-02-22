@@ -1,0 +1,7 @@
+{
+  "name": "3 Handwritten Text Extraction",
+  "description": "Advanced AI-powered tool to convert handwritten notes into digital text, translate, and export to PDF or Word formats.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
