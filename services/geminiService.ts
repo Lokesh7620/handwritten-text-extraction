@@ -2,7 +2,9 @@
 import { GoogleGenAI } from "@google/genai";
 
 const getClient = () => {
-  const apiKey = (import.meta as any).env.VITE_GEMINI_API_KEY;
+  const env = (import.meta as any).env;
+  const apiKey = env ? env.VITE_GEMINI_API_KEY : undefined;
+
   if (!apiKey) {
     throw new Error("VITE_GEMINI_API_KEY not found in environment.");
   }
